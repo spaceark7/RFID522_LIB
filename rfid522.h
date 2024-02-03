@@ -14,13 +14,15 @@ class RFID522
 {
   public: 
     RFID522(int _SSPIN,  int _RSTPIN);
-    void beginRFIDConnection();
-    String readRFIDTag();
+    void beginConnection();
+    void readRFIDTag();
+    char* getRFIDTagValue();
 
     private:
       byte nuidPICC[4];
       int _SSPIN;
       int _RSTPIN;
+      MFRC522 _rfid;
 };
 
 

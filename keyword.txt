@@ -1,0 +1,4 @@
+
+RFID522 KEYWORD1
+beginConnection KEYWORD2
+readRFIDTag KEYWORD2
